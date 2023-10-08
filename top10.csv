@@ -1,0 +1,11 @@
+countries ,ioc_code ,summer_participations,summer_gold,summer_silver,summer_bronze,summer_total,winter_participations,winter_gold,winter_silver,winter_bronze,winter_total,total_participation,total_gold,total_silver,total_bronze,total_total 
+United States,(USA),28,"1,060",831,738,"2,629",24,113,122,95,330,52,"1,173",953,833,"2,959"
+Soviet Union,(URS),9,395,319,296,"1,010",9,78,57,59,194,18,473,376,355,"1,204"
+Great Britain,(GBR),29,284,318,314,916,24,12,5,17,34,53,296,323,331,950
+Germany,(GER),17,201,207,247,655,13,104,98,65,267,30,305,305,312,922
+France,(FRA),29,223,251,277,751,24,41,42,55,138,53,264,293,332,889
+Italy,(ITA),28,217,188,213,618,24,42,43,56,141,52,259,231,269,759
+China,(CHN),11,262,199,173,634,12,22,32,23,77,23,284,231,196,711
+Sweden,(SWE),28,148,176,179,503,24,65,51,60,176,52,213,227,239,679
+Japan,(JPN),23,169,150,178,497,22,17,28,31,76,45,186,178,209,573
+Norway,(NOR),27,62,51,50,163,24,148,133,124,405,51,210,184,174,568
