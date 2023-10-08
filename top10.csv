@@ -1,4 +1,4 @@
-countries,ioc_code ,summer_participations,summer_gold,summer_silver,summer_bronze,summer_total,winter_participations,winter_gold,winter_silver,winter_bronze,winter_total,total_participation,total_gold,total_silver,total_bronze,total_total
+countries,ioc_code,summer_participations,summer_gold,summer_silver,summer_bronze,summer_total,winter_participations,winter_gold,winter_silver,winter_bronze,winter_total,total_participation,total_gold,total_silver,total_bronze,total_total
 United States,(USA),28,"1,060",831,738,"2,629",24,113,122,95,330,52,"1,173",953,833,"2,959"
 Soviet Union,(URS),9,395,319,296,"1,010",9,78,57,59,194,18,473,376,355,"1,204"
 Great Britain,(GBR),29,284,318,314,916,24,12,5,17,34,53,296,323,331,950
