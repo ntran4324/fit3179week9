@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.25.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.15.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.22.2"></script>
+</head>
+<body>
+  <div id="vis"/>
+  <script>
+    const spec = {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {"text": "Top 10 Countries By Medal Count"},
+  "data": {
+    "url": "https://raw.githubusercontent.com/ntran4324/fit3179week9/7bc3498f335dd482a7ebb2acd2a44df357958e37/top10.csv"
+  },
+  "params": [
+    {
+      "name": "medal_selection",
+      "bind": {
+        "input": "select",
+        "options": [
+          "total_total",
+          "total_gold",
+          "total_silver",
+          "total_bronze"
+        ],
+        "labels": [
+          "Total Medals",
+          "Gold Medals",
+          "Silver Medals",
+          "Bronze Medals"
+        ],
+        "name": "Medal Type"
+      }
+    }
+  ],
+  "transform": [
+    {"calculate": "datum[medal_selection]", "as": "selected_medal_type"}
+  ],
+  "layer": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "selected_medal_type",
+          "type": "quantitative",
+          "title": "Number Of Medals"
+        },
+        "y": {
+          "field": "countries",
+          "type": "nominal",
+          "sort": {"field": "selected_medal_type", "order": "descending"},
+          "title": "Country"
+        }
+      }
+    },
+    {
+      "mark": {"type": "text", "align": "right", "dx": -5},
+      "encoding": {
+        "x": {"field": "selected_medal_type", "type": "quantitative"},
+        "y": {
+          "field": "countries",
+          "type": "nominal",
+          "sort": {"field": "selected_medal_type", "order": "descending"}
+        },
+        "text": {"field": "selected_medal_type", "type": "quantitative"},
+        "color": {"value": "white"}
+      }
+    }
+  ],
+  "config": {}
+};
+    vegaEmbed("#vis", spec, {mode: "vega-lite"}).then(console.log).catch(console.warn);
+  </script>
+</body>
+</html>
